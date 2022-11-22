@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+body{position: relative;
+padding-bottom: 17em;}
+
+
+.colorDeFondo {
+    margin: 0%;
+    background-color: rgba(6, 6, 6, 0.755);
+}
+
+#hero {
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d95;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+header {
+
+    padding: 35px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+
+    top: 25px;
+    left: 5px;
+}
+
+.cabecera {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(182, 115, 15);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    font-family: 'Griffy', cursive;
+    font-size: xxx-large;
+       
+    
+}
+
+
+
+.fotoHistoria {width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+}
+
+.parrafoHistoria {
+    line-height: 2;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+div .img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: rgb(14, 9, 1);
+    text-shadow: 2px 2px 7px rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-family: 'Rubik glitch, cursive;
+    animation iconfloat infinite 5s ease-in-out;
+
+    
+
+}
+
+h2 {color: aliceblue;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+h3 {
+    font-family: 'Griffy', cursive;
+    font-size: x-large;
+}
+
+.entradaEvento {
+    font-family: 'Griffy', cursive;
+    font-size: x-large;
+}
+
+.proximoEvento {
+    margin-left: 26rem;
+    height: 50rem;
+    position: relative;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.infoEvento {
+    text-align: center;
+    line-height: 2;
+    font-weight: 600;
+    text-shadow: 2px 2px 7px rgb(250, 246, 38);
+    position: relative;
+    z-index: 2;
+    font-family: 'Griffy', cursive;
+    font-size: xx-large;
+}
+
+.mapa_del_evento {
+    margin-left: 35rem;
+    position: relative;
+    z-index: 2;
+}
+
+.entradaEvento {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.copy {
+    display: inline-flex;
+    position: relative;
+    z-index: 2;
+}
+.copy {
+    margin-top: 2.5rem;
+    margin-left: -1rem;
+}
+
+
+footer {
+    background-color: #212529;
+    min-height: 100;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: .5em 0;
+}
+footer p{ color: #080808dd;
+text-align: center;}
+
+.footdiscos{ background-color: rgba(21, 81, 17, 0.486);}
+
+div footer {
+    display: inline-block;
+}
+.footercontacto {
+    position: fixed;
+}
+
+
+
+.logofoot {
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+    display: inline;
+}
+
+
+
+
+
+.mensajito {
+    position: relative;
+}
+
+
+.videos {
+    background-color: rgb(115, 115, 115);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagenespaganas {
+    background-color: rgb(115, 115, 115);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fotos {
+    width: 450px;
+    height: 450px;
+}
+
+
+
+.integrantes {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgba(126, 7, 7, 0.445);
+}
+
+.guitarrista {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.baterista {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bajista {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.redes {
+  font-size: 26px;
+  padding: 0 8px;
+  animation:float infinite 4s ease-in-out;
+  }
+
+  .iconoinsta {animation-delay:  1s}
+    .iconospoty { animation-delay: 2s}
+  .iconoyoutube { animation-delay: 3s}
+
+.iconoface {
+    width: 30px;
+}
+
+.iconoinsta {
+    width: 30px;
+}
+
+.iconospoty {
+    width: 60px;
+}
+
+.iconoyoutube {
+    width: 60px;
+}
+.boton {display: flex;
+align-items: center;
+justify-content: center;}
+
+main section div { display: flex;
+align-items: center;
+justify-content: center;}
+.tamañocontacto {background-color: darkgrey;
+}
+.galeria{ width: 70%;}
+.carousel-item{
+    height: 70vh;
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+
+}
+form {
+    justify-content: center;
+}
+::placeholder{ color: rgb(255, 255, 255);
+font-size: 1rem;}
