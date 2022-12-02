@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 body {
   position: relative;
@@ -6,14 +5,11 @@ body {
 
 .colorDeFondo {
   margin: 0%;
-  background-color: rgba(6, 6, 6, 0.755); }
-
-#hero {
-  min-height: 100vh;
-  position: relative; }
+  background-color: rgba(6, 6, 6, 0.755);
+  font-size: 1.2rem; }
 
 video {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -31,27 +27,49 @@ video {
   mix-blend-mode: overlay; }
 
 header {
-  padding: 35px;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
   text-align: center;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  font-family: "Griffy", cursive;
+  font-size: x-large;
+  color: rgba(14, 9, 1, 0.211);
+  text-shadow: 2px 2px 7px white; }
+  header .cabecera {
+    padding: 0;
+    margin: 0; }
+  header .logo {
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 5px; }
+  header nav ul {
+    list-style-type: none; }
 
+/*
 .logo {
-  width: 100px;
-  height: 100px;
-  top: 25px;
-  left: 5px; }
+    width: 100px;
+    height: 100px;
+
+    top: 25px;
+    left: 5px;
+}
 
 .cabecera {
-  padding: 0;
-  margin: 0; }
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
 
 nav ul {
-  list-style-type: none; }
-
+    list-style-type: none;
+}
+*/
 .fotoHistoria {
   width: 60%;
   margin-left: 20%;
@@ -59,18 +77,22 @@ nav ul {
   margin-top: 2%;
   margin-bottom: 2%; }
 
-.parrafoHistoria {
+.parrafo {
   line-height: 2;
   font-family: 'Indie Flower', cursive;
   font-size: 1.5rem;
   color: whitesmoke;
   text-align: center; }
 
-div .img {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  z-index: 2; }
+.parrafocontacto {
+  line-height: 2;
+  font-family: 'Indie Flower';
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 14px white;
+  position: relative; }
 
 h1 {
   color: #0e0901;
@@ -81,41 +103,53 @@ h1 {
   font-family: "Rubik glitch", cursive;
   animation: iconfloat, infinite 5s ease-in-out; }
 
+.titulohistoria {
+  font-family: 'indie flower';
+  font-size: 5rem;
+  margin-bottom: 1%; }
+
 h2 {
-  color: aliceblue;
+  color: #0e0901;
+  text-shadow: 2px 2px 7px white;
   text-align: center;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  font-family: "Rubik glitch", cursive;
+  animation: iconfloat, infinite 5s ease-in-out; }
 
-h3 {
+section h2 {
+  color: white;
   font-family: "Griffy", cursive;
-  font-size: x-large; }
+  font-size: x-large;
+  margin-top: 5%; }
 
 .entradaEvento {
   font-family: "Griffy", cursive;
   font-size: x-large; }
 
 .proximoEvento {
-  margin-left: 26rem;
-  height: 50rem;
+  margin-top: 3%;
+  margin-left: 30%;
+  width: 40%;
   position: relative;
   z-index: 2;
-  opacity: 0.5; }
+  opacity: 75%; }
 
 .infoEvento {
   text-align: center;
   line-height: 2;
-  font-weight: 600;
-  text-shadow: 2px 2px 7px #faf626;
   position: relative;
   z-index: 2;
   font-family: "Griffy", cursive;
-  font-size: xx-large; }
+  font-size: xx-large;
+  color: black;
+  text-shadow: 2px 2px 7px white;
+  font-weight: bold; }
 
 .mapa_del_evento {
-  margin-left: 35rem;
+  margin-left: 0rem;
   position: relative;
-  z-index: 2; }
+  justify-content: center center; }
 
 .entradaEvento {
   text-align: center;
@@ -139,24 +173,19 @@ footer {
   width: 100%;
   padding: .5em 0; }
 
-footer p {
-  color: #080808dd;
-  text-align: center; }
-
-.footdiscos {
-  background-color: rgba(21, 81, 17, 0.486); }
-
 div footer {
   display: inline-block; }
 
+.empresa {
+  color: aliceblue; }
+
 .footercontacto {
-  position: fixed; }
+  position: -webkit-sticky; }
 
 .logofoot {
-  width: 50px;
-  height: 50px;
-  margin: 20px 20px;
-  display: inline; }
+  width: 40px;
+  height: 40px;
+  display: flex; }
 
 .mensajito {
   position: relative; }
@@ -171,11 +200,12 @@ div footer {
   align-items: center; }
 
 .imagenespaganas {
-  background-color: #737373;
+  background-color: rgba(6, 6, 6, 0.755);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  object-fit: cover; }
 
 .fotos {
   width: 450px;
@@ -215,24 +245,27 @@ div footer {
     transform: translateY(0); } }
 
 .redes {
+  display: inline-block;
   font-size: 26px;
   padding: 0 8px;
   animation: float infinite 4s ease-in-out; }
 
 .iconoinsta {
-  animation-delay: 1s; }
+  animation: float infinite 4s ease-in-out;
+  animation-delay: 0.5s; }
 
 .iconospoty {
-  animation-delay: 2s; }
+  animation: float infinite 4s ease-in-out;
+  animation-delay: 1s; }
 
 .iconoyoutube {
-  animation-delay: 3s; }
+  animation: float infinite 4s ease-in-out; }
 
 .iconoface {
-  width: 30px; }
+  width: 25px; }
 
 .iconoinsta {
-  width: 30px; }
+  width: 25px; }
 
 .iconospoty {
   width: 60px; }
@@ -250,8 +283,9 @@ main section div {
   align-items: center;
   justify-content: center; }
 
-.tamañocontacto {
-  background-color: darkgrey; }
+.background-image {
+  background-image: url(../asset/imagenes/teatrofurio.jpg);
+  background-position: center; }
 
 .galeria {
   width: 70%; }
@@ -267,5 +301,18 @@ form {
   justify-content: center; }
 
 ::placeholder {
-  color: white;
+  color: #fef7f7;
   font-size: 1rem; }
+
+.titulodecontacto {
+  margin-top: 1%; }
+
+.separador {
+  color: #737373;
+  margin-left: 6%;
+  margin-right: 6%;
+  border-top: 10px solid #737373; }
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px; }

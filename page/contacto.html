@@ -18,8 +18,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
 </head>
 
-<body class="tamañocontacto" background="../asset/imagenes/formacion/imagen de fondo.jpg">
-    <header style="color: black;" class="cabecera">
+<body class="background-image">
+  
+    <header class="cabecera ">
         <img class="logo" src="../asset/imagenes/lafuriologo.png1.png" alt="logoDeLaBanda">
         
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -30,7 +31,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./historia.html">historia</a>
@@ -70,28 +71,30 @@
     <main class="mensajeria">
     
             <h1 class="titulodecontacto">Dejanos Tu Mensaje!</h1>
-            <p class="pdecontacto">El boca a boca fue, es y sera la manera en que LaFurio siga creciendo como lo viene haciendo, por eso mismo queremos que nos cuentes desde donde nos seguis, anecdotas de algun show o algun viaje a ver a la banda y tambien donde te gustaria que LaFurio "RUJA" en vivo!... Te leemos!</p>
+            <hr class="separador">
+            <p class="parrafocontacto">El boca a boca fue, es y sera la manera en que LaFurio siga creciendo como lo viene haciendo, por eso mismo queremos que nos cuentes desde donde nos seguis, anecdotas de algun show o algun viaje a ver a la banda y tambien donde te gustaria que LaFurio "RUJA" en vivo!... Te leemos!</p>
+            <hr class="separador">
             <form class="row g-3">
              <div class="row g-3">
-                <div class="col-md-3 col-sm-12 d-flex d-column aling-items-center">
-                  <input type="text" class="form-control text-white bg-transparent " placeholder="Nombre" aria-label="First name">
+                <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
+                  <input type="text" class="form-control text-white bg-dark " placeholder="Nombre *" aria-label="First name">
                 </div>
                 
-                <div class="col-md-3 col-sm-12 d-flex d-column aling-items-center">
-                  <input type="text" class="form-control bg-transparent" placeholder="Apellido" aria-label="Last name">
-                </div>
-                <div class="col-md-3 col-sm-12 d-flex d-column aling-items-center">
-                    <input type="text" class="form-control bg-transparent" placeholder="desde donde nos seguis" aria-label="Last name">
-                  </div>
-              </div>
-                <div class="col-md-3 col-sm-12 d-flex d-column aling-items-center">
+              
+          
+
+              <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
+              <input type="tel" class="form-control text-white bg-dark " placeholder="Su Telefono *" id="telefono" required data-validation-required-message="Por favor ingrese su Telefono.">
+            </div>  
+              
+            <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
                   <label for="inputEmail4" class="form-label"></label>
-                  <input type="email" class="form-control bg-transparent" id="inputEmail4" placeholder="email">
+                  <input type="email" class="form-control bg-dark  text-white" id="inputEmail4" placeholder="email *">
                 </div>
                 
                 
-                <div class="form-floating col-md-3 d-flex d-column aling-items-center">
-                    <textarea class="form-control bg-transparent" placeholder="Queremos conocer tu historia con la Banda!" id="floatingTextarea2" style="height: 100px"></textarea>
+                <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
+                    <textarea class="form-control bg-dark text-white" placeholder="Queremos conocer tu historia con la Banda!" id="floatingTextarea2" style=></textarea>
                     <label for="floatingTextarea2"></label>
                   </div>
                   
@@ -101,12 +104,13 @@
               </form>
      
     </main>
-    <footer class="w-100 d-flex aling-items justify-content-center flex-wrap footercontacto">
-      <tfoot><img class="logofoot" src="../asset/imagenes/lafuriologo.png1.png"></tfoot>  
-       <p class="fs-5 px-3 pt-4 text-light"> Copyright © Todos los derechos reservados </p>
+    <footer class="w-100 d-flex aling-items justify-content-center flex-wrap bg-dark footercontacto">
+      <tfoot><img class="logofoot" src="../asset/imagenes/lafuriologo.png1.png" alt="logolafurio"></tfoot>  
+       <p class="fs-6 px-3 pt-1 text-light"> Copyright © Todos los derechos reservados </p>
           
        <div class="redes">
-                <a href="https://www.facebook.com/lafurio.banda" target="_blank"> <img src="../asset/imagenes/facebook.svg" alt="iconoface" class="iconoface" > </a>
+                
+        <a href="https://www.facebook.com/lafurio.banda" target="_blank"> <img src="../asset/imagenes/facebook.svg" alt="iconoface" class="iconoface" > </a>
 
                 <a href="https://www.instagram.com/lafurio.banda/" target="_blank"><img src="../asset/imagenes/instagram.svg" alt="iconoinsta" class="iconoinsta" ></a>
 
@@ -115,6 +119,7 @@
                 <a href="https://www.youtube.com/channel/UCZpb9ElQzeQgR0BnpchfhQA" target="_blank"> <img src="../asset/imagenes/youtube.svg" alt="iconoyoutube" class="iconoyoutube" > </a>
             </div>
 
+            <p class="empresa fs-6">Compumundohipermegared©</p> 
        
     </footer>
     <script src="../js/bootstrap.min.js"></script>
