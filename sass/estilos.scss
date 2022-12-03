@@ -126,9 +126,14 @@ h1 {
 }
 
    .titulohistoria{font-family: 'indie flower'; 
-    font-size: 5rem;
+    font-size: 5rem ;
 margin-bottom: 1%;}
 
+@media screen and (max-width: 314px) {
+    .titulohistoria { font-size: 3rem;
+    }
+    
+}
 
 
 h2 { color: rgb(14, 9, 1);
