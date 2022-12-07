@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+<link rel="icon" href="../asset/imagenes/lafuriologo.png1.ico">
 </head>
 
 <body class="background-image">
@@ -74,10 +75,12 @@
             <hr class="separador">
             <p class="parrafocontacto">El boca a boca fue, es y sera la manera en que LaFurio siga creciendo como lo viene haciendo, por eso mismo queremos que nos cuentes desde donde nos seguis, anecdotas de algun show o algun viaje a ver a la banda y tambien donde te gustaria que LaFurio "RUJA" en vivo!... Te leemos!</p>
             <hr class="separador">
-            <form class="row g-3">
+            
+            <form class="row g-3" action="../page/error.html">
              <div class="row g-3">
-                <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
-                  <input type="text" class="form-control text-white bg-dark " placeholder="Nombre *" aria-label="First name">
+                
+              <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
+                  <input type="text" class="form-control text-white bg-dark " placeholder="Nombre *" id="Nombre" required data-validation-required-message aria-label="First name">
                 </div>
                 
               
@@ -89,19 +92,22 @@
               
             <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
                   <label for="inputEmail4" class="form-label"></label>
-                  <input type="email" class="form-control bg-dark  text-white" id="inputEmail4" placeholder="email *">
+                  <input type="email" class="form-control bg-dark  text-white" id="inputEmail4" required data-validation-required-message placeholder="email *">
                 </div>
                 
                 
                 <div class="ms-5 col-md-5 col-sm-12 d-flex d-column aling-items-center">
-                    <textarea class="form-control bg-dark text-white" placeholder="Queremos conocer tu historia con la Banda!" id="floatingTextarea2" style=></textarea>
+                    <textarea class="form-control bg-dark text-white" placeholder="Queremos conocer tu historia con la Banda!" id="floatingTextarea2" required data-validation-required-message style=></textarea>
                     <label for="floatingTextarea2"></label>
                   </div>
                   
                 <div class="col-12 boton" > 
-                  <button type="submit" class="btn btn-primary">ENVIAR</button>
-                </div>
+                  
+                  <input type="submit" value="ENVIAR" class="btn btn-dark">
+                
+                  </div>
               </form>
+            
      
     </main>
     <footer class="w-100 d-flex aling-items justify-content-center flex-wrap bg-dark footercontacto">
