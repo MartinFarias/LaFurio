@@ -1,5 +1,6 @@
 @import "variables";
 @import "reset";
+
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 *
@@ -431,7 +432,10 @@ form {
     border-top: 10px solid rgb(116, 116, 116)
 }
 
-hr {@include mixinmargenes}
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .container .cover { 
     object-fit: cover;
