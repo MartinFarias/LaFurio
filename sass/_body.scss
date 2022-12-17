@@ -1,0 +1,16 @@
+
+body {
+    position: relative;
+    padding-bottom: 17em;
+    background-color: #2f3134;
+
+}
+main section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background-image {
+    background-image: url(../asset/imagenes/teatrofurio.jpg);
+    background-position: center;
+}

@@ -4,11 +4,13 @@
   margin: 0;
   box-sizing: border-box; }
 
-*
-body {
-  position: relative;
-  padding-bottom: 17em;
-  background-color: #2f3134; }
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0); } }
 
 video {
   position: fixed;
@@ -29,34 +31,6 @@ video {
   opacity: 0.5;
   mix-blend-mode: overlay; }
 
-/*
-.colorDeFondo {
-    margin: 0%;
-    background-color: rgba(6, 6, 6, 0.755);
-font-size: 1.2rem;
-}
-
-*/
-/*
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover ;
-}*/
-/*
-.capa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1c1c1d95;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
-}*/
 header {
   margin-top: 0px;
   margin-left: 0px;
@@ -79,148 +53,19 @@ header {
   header nav ul {
     list-style-type: none; }
 
-/*
-.logo {
-    width: 100px;
-    height: 100px;
-
-    top: 25px;
-    left: 5px;
-}
-
-.cabecera {
-    padding: 0;
-    margin: 0;
-}
-
-
-
-
-
-nav ul {
-    list-style-type: none;
-}
-*/
-h1 {
-  color: black;
-  text-shadow: 2px 2px 7px white;
-  text-align: center;
+body {
   position: relative;
-  z-index: 2;
-  font-family: "Rubik glitch", cursive;
-  animation: iconfloat, infinite 5s ease-in-out;
-  margin-top: 2%; }
+  padding-bottom: 17em;
+  background-color: #2f3134; }
 
-/*
-h1 {
-    color: rgb(14, 9, 1);
-    text-shadow: 2px 2px 7px rgb(255, 255, 255);
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    font-family: "Rubik glitch", cursive;
-    animation: iconfloat, infinite 5s ease-in-out;
-}*/
-.fotoHistoria {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 2%;
-  margin-bottom: 2%; }
+main section div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-.parrafo {
-  line-height: 2;
-  font-family: "Indie Flower", cursive;
-  font-size: 1.5rem;
-  color: whitesmoke;
-  text-align: center; }
-
-.parrafocontacto {
-  line-height: 2;
-  font-family: "Indie Flower";
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  text-shadow: 2px 2px 7px white;
-  position: relative; }
-
-.titulohistoria {
-  font-family: "Griffy";
-  font-size: 5rem;
-  margin-bottom: 1%; }
-
-@media screen and (max-width: 314px) {
-  .titulohistoria {
-    font-size: 3rem; } }
-
-.cartas {
-  margin-left: 1%; }
-
-.card-title {
-  color: black;
-  text-shadow: 2px 2px 7px #fc0303;
-  font-family: "Griffy", cursive;
-  font-size: xx-large; }
-
-h2 {
-  color: black;
-  text-shadow: 2px 2px 7px white;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  font-family: "Rubik glitch", cursive;
-  animation: iconfloat, infinite 5s ease-in-out;
-  margin-top: 2%; }
-
-section h2 {
-  color: white;
-  font-family: "Griffy", cursive;
-  font-size: x-large;
-  margin-top: 5%; }
-
-.entradaEvento {
-  font-family: "Griffy", cursive;
-  font-size: x-large;
-  text-align: center center; }
-
-.proximoEvento {
-  margin-top: 3%;
-  margin-left: 30%;
-  width: 40%;
-  position: relative;
-  z-index: 2;
-  opacity: 75%; }
-
-.infoEvento {
-  text-align: center;
-  line-height: 2;
-  position: relative;
-  z-index: 2;
-  font-family: "Griffy", cursive;
-  font-size: xx-large;
-  color: black;
-  text-shadow: 2px 2px 7px white;
-  font-weight: bold; }
-
-.mapa_del_evento {
-  position: relative;
-  overflow: hidden;
-  margin-left: 33%; }
-
-.entradaEvento {
-  text-align: center;
-  position: relative;
-  z-index: 2; }
-
-.copy {
-  display: inline-flex;
-  position: relative;
-  z-index: 2; }
-
-.copy {
-  margin-top: 2.5rem;
-  margin-left: -1rem; }
+.background-image {
+  background-image: url(../asset/imagenes/teatrofurio.jpg);
+  background-position: center; }
 
 footer {
   background-color: #212529;
@@ -243,33 +88,6 @@ div footer {
   width: 40px;
   height: 40px;
   display: flex; }
-
-.mensajito {
-  position: relative; }
-
-.imagenespaganas {
-  background-color: rgba(95, 90, 90, 0.069);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  object-fit: cover; }
-
-.imagenespaganas .fotos {
-  width: 450px;
-  height: 450px;
-  border: rgba(235, 163, 163, 0.575) solid; }
-
-section img:hover {
-  transform: scale(1.25); }
-
-@keyframes float {
-  0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(-15px); }
-  100% {
-    transform: translateY(0); } }
 
 .redes {
   display: inline-block;
@@ -300,32 +118,48 @@ section img:hover {
 .iconoyoutube {
   width: 60px; }
 
-.boton {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+h1 {
+  color: black;
+  text-shadow: 2px 2px 7px white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-family: "Rubik glitch", cursive;
+  animation: iconfloat, infinite 5s ease-in-out;
+  margin-top: 2%; }
 
-main section div {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+h2 {
+  color: black;
+  text-shadow: 2px 2px 7px white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-family: "Rubik glitch", cursive;
+  animation: iconfloat, infinite 5s ease-in-out;
+  margin-top: 2%; }
 
-.background-image {
-  background-image: url(../asset/imagenes/teatrofurio.jpg);
-  background-position: center; }
+.titulohistoria {
+  font-family: "Griffy";
+  font-size: 5rem;
+  margin-bottom: 1%; }
 
-.galeria {
-  width: 70%; }
+section h2 {
+  color: white;
+  font-family: "Griffy", cursive;
+  font-size: x-large;
+  margin-top: 5%; }
 
-form {
-  justify-content: center; }
+.proximoEvento {
+  margin-top: 3%;
+  margin-left: 30%;
+  width: 40%;
+  position: relative;
+  z-index: 2;
+  opacity: 75%; }
 
-::placeholder {
-  color: #fef7f7;
-  font-size: 1rem; }
-
-.titulodecontacto {
-  margin-top: 1%; }
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 .separador {
   color: #737373;
@@ -333,13 +167,93 @@ form {
   margin-right: 6%;
   border-top: 10px solid #747474; }
 
-hr {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+.mapa_del_evento {
+  position: relative;
+  overflow: hidden;
+  margin-left: 33%; }
+
+.entradaEvento {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-family: "Griffy", cursive;
+  font-size: x-large; }
+
+.imagenespaganas {
+  background-color: rgba(95, 90, 90, 0.069);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  object-fit: cover; }
+
+.imagenespaganas .fotos {
+  width: 450px;
+  height: 450px;
+  border: rgba(235, 163, 163, 0.575) solid; }
+
+section img:hover {
+  transform: scale(1.25); }
+
+.titulodecontacto {
+  margin-top: 1%; }
+
+::placeholder {
+  color: #fef7f7;
+  font-size: 1rem; }
+
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+form {
+  justify-content: center; }
 
 .container .cover {
   object-fit: cover; }
 
+.infoEvento {
+  text-align: center;
+  line-height: 2;
+  position: relative;
+  z-index: 2;
+  font-family: "Griffy", cursive;
+  font-size: xx-large;
+  color: black;
+  text-shadow: 2px 2px 7px white;
+  font-weight: bold; }
+
+.parrafohistoria {
+  line-height: 2;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  text-align: center; }
+
+.parrafocontacto {
+  line-height: 2;
+  font-family: "Indie Flower";
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 7px white;
+  position: relative; }
+
 .parrafoerror {
   color: white;
   font-size: x-large; }
+
+.cartas {
+  margin-left: 1%; }
+
+.card-title {
+  color: black;
+  text-shadow: 2px 2px 7px #fc0303;
+  font-family: "Griffy", cursive;
+  font-size: xx-large; }
+
+@media screen and (max-width: 314px) {
+  .titulohistoria {
+    font-size: 3rem; } }

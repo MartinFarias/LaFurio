@@ -1,0 +1,62 @@
+footer {
+    background-color: #212529;
+    min-height: 100;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: .5em 0;
+}
+
+
+div footer {
+    display: inline-block;
+}
+.empresa {
+    color: aliceblue;
+}
+
+.footercontacto {
+    position: -webkit-sticky;
+}
+
+
+.logofoot {
+    @include mixinTamañoLogoFoot
+}
+
+.redes {
+    display: inline-block;
+    font-size: 26px;
+    padding: 0 8px;
+    animation: float infinite 4s ease-in-out;
+}
+
+.iconoinsta {
+    animation: float infinite 4s ease-in-out;
+    animation-delay: 0.5s
+}
+
+.iconospoty {
+    animation: float infinite 4s ease-in-out;
+    animation-delay: 1s
+}
+
+.iconoyoutube {
+    animation: float infinite 4s ease-in-out;
+}
+
+.iconoface {
+    width: 25px;
+}
+
+.iconoinsta {
+    width: 25px;
+}
+
+.iconospoty {
+    width: 60px;
+}
+
+.iconoyoutube {
+    width: 60px;
+}

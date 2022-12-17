@@ -1,0 +1,22 @@
+video {
+    position: fixed;
+    @include mixintamaño1;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.capa {
+    position: absolute;
+    @include mixintamaño1;
+    background: #1c1c1d95;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.videosfurios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: cover;
+}

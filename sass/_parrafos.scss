@@ -1,0 +1,32 @@
+.infoEvento {
+    text-align: center;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
+    font-family: $tipografia-3, cursive;
+    font-size: xx-large;
+    color: $color-negro-shadow;
+    text-shadow: $color-shadow;
+    font-weight: bold;
+}
+.parrafohistoria {
+    line-height: 2;
+    font-family: $tipografia-1, cursive;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.parrafocontacto {
+    line-height: 2;
+    font-family: $tipografia-1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: $color-negro-shadow;
+    text-shadow: $color-shadow;
+    position: relative;
+}
+.parrafoerror {
+    color: white;
+    font-size: x-large;
+}

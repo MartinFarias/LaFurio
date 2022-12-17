@@ -1,0 +1,25 @@
+header {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-family: $tipografia-3, cursive;
+    font-size: x-large;
+    background-color: $color-negro-shadow;
+    text-shadow: $color-shadow;
+
+    .cabecera {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+    @include mixinTamañoLogo
+    }
+
+    nav ul {
+    list-style-type: none;
+    }
+}
